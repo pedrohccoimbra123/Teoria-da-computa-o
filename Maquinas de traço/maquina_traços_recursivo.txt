@@ -1,0 +1,14 @@
++---------------------+---------+-------------------------------------------+-----------------------------+
+|   Estado Atual      |  Entrada|                Ação                       |   Próximo Estado            |
++---------------------+---------+-------------------------------------------+-----------------------------+
+|   Início            |   -     |   Exibir mensagem de solicitação           |   Solicitar Número          |
++---------------------+---------+-------------------------------------------+-----------------------------+
+|   Solicitar Número  |   -     |   Receber número do usuário               |   Calcular Fatorial         |
+|                     |         |   (aguarda entrada)                       |                             |
++---------------------+---------+-------------------------------------------+-----------------------------+
+|   Calcular Fatorial |   -     |   Chamar função calcularFatorial com o     |   Exibir resultado e voltar |
+|                     |         |   número fornecido como argumento          |   ao Início                |
+|                     |         |   1. Verificar se n é 0 (caso base)       |                             |
+|                     |         |   2. Se n = 0, retornar 1                 |                             |
+|                     |         |   3. Se n > 0, retornar n * fatorial(n-1) |                             |
++---------------------+---------+-------------------------------------------+-----------------------------+
